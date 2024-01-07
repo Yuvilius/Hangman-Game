@@ -5,7 +5,6 @@ end_of_game = False
 word_list = ["ardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
-stages_length = len(stages)
 
 
 print("""
@@ -30,6 +29,7 @@ for _ in range(word_length):
 
 
 def game_play():
+    global mode
     global end_of_game
     global lives
     while not end_of_game:
@@ -46,7 +46,8 @@ def game_play():
             lives -= 1
             print(f"Beware!, you have {lives} lives left")
             if lives == 0:
-                print("You Lose")
+                print(stages_for_easy[0])
+                print("You Lose...")
                 break
 
         # Join all the elements in the list and turn it into a String.
@@ -55,9 +56,14 @@ def game_play():
         # Check if user has got all letters.
         if "_" not in display:
             end_of_game = True
-            print("You win.")
+            print("You win!!!.")
+            break
 
-        print(stages[lives])
-
+        if mode == 'e':
+            print(stages_for_easy[lives])
+        else:
+            print(stage_for_hard[lives])
 
 game_play()
+
+print("Thank You for Playing this game!!!")
