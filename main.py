@@ -2,7 +2,8 @@ from art import *
 import random
 
 end_of_game = False
-word_list = ["ardvark", "baboon", "camel"]
+word_list = ["ardvark", "baboon", "camel", "elephant", "Galaxy", "Song", "Pumpkin", "Rhinoceros", "Dinosaur",
+             "Butterfly", "Avalanche", "Giant", "Thunder"]
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 
