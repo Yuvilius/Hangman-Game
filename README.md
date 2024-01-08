@@ -12,7 +12,7 @@ Welcome to the Hangman game implemented in Python. This simple console-based gam
 ## How to Play
 
 1. Clone this repository to your local machine.
-2. Run the `hangman.py` script using a Python interpreter.
+2. Run the `main.py` script using a Python interpreter.
 3. Follow the on-screen instructions to guess letters and solve the word.
 
 Feel free to customize the word list or add additional features to enhance the game!
